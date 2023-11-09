@@ -11,7 +11,7 @@ require_once("banner.php")
                 <div class="section-title text-center">
                     <div class="product-tab nav nav-tabs">
                         <ul>
-                            <li class="active"><a data-toggle="tab" href="#arrival">Sách bán chạy</span></a></li>
+                            <li class="active"><a data-toggle="tab" href="#arrival">Sách mới nhất</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -145,53 +145,6 @@ require_once("banner.php")
     </div>
 </div>
 <!-- tab-products section end -->
-
-<!-- featured-products section start -->
-<section class="single-products  products-two section-padding extra-padding-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-title text-center">
-                    <h2>Sách mới nhất</h2>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper">
-            <ul class="load-list load-list-one">
-                <?php for ($i = 0; $i < 4; $i++) { ?>
-                    <li>
-                        <div class="row text-center">
-                            <?php
-                            if ($data_arr[$i] != null) {
-                                foreach ($data_arr[$i] as  $row) { ?>
-                                    <!-- single product end -->
-                                    <div class="col-xs-12 col-sm-6 col-md-3 r-margin-top">
-                                        <div class="single-product">
-                                            <div class="product-f">
-                                                <a href="?act=detail&id=<?= $row['MaSP'] ?>"><img src="public/<?= $row['HinhAnh1'] ?>" alt="Product Title" class="img-products" /></a>
-                                                <div class="actions-btn">
-                                                    <a href="?act=detail&id=<?= $row['MaSP'] ?>"><i class="mdi mdi-cart"></i></a>
-                                                    <a href="?act=detail&id=<?= $row['MaSP'] ?>" data-toggle="modal" ><i class="mdi mdi-eye"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-dsc">
-                                                <p><a href="?act=detail&id=<?= $row['MaSP'] ?>"><?= $row['TenSP'] ?></a></p>
-                                                <span><?= number_format($row['DonGia']) ?> VNĐ</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single product end -->
-                            <?php }
-                            } ?>
-                        </div>
-                    </li>
-                <?php } ?>
-            </ul>
-            <button id="load-more-one">Tải thêm</button>
-        </div>
-    </div>
-</section>
-<!-- featured-products section end -->
 <!-- quick view start -->
 <?php
 include_once("Views/quickview.php");
