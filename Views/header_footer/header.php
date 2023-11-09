@@ -51,22 +51,7 @@
                         <nav>
                             <ul>
                                 <li><a href="?act=home">Trang chủ</a></li>
-                                <li><a href="?act=shop">Cửa Hàng</a>
-                                    <ul class="magamenu">
-                                        <li class="banner"></li>
-                                        <?php    $i = 1; foreach ($data_chitietDM as $row) { ?>
-                                            <li>
-                                                <a href="?act=shop&sp=<?=$i?>"><h5><?= $data_danhmuc[$i-1]['TenDM'] ?></h5></a>
-                                                <ul>
-                                                    <?php foreach ($row as $value) { ?>
-                                                    <li><a href="?act=shop&sp=<?=$value['MaDM']?>&loai=<?=$value['TenLSP']?>"><?=$value['TenLSP']?></a></li>
-                                                    <?php }?>
-                                                </ul>
-                                            </li>
-                                        <?php $i++; } ?>
-                                        <li class="banner"></li>
-                                    </ul>
-                                </li>
+                                <li><a href="?act=shop">Cửa Hàng</a></li>
                                 <li>
                                     <a href="?act=checkout">Thanh Toán</a>
                                 </li>
