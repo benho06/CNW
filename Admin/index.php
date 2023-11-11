@@ -33,10 +33,8 @@ if (isset($_SESSION['isLogin_Admin']) && $_SESSION['isLogin_Admin'] == true) {
                     $controller_obj->list();
                     break;
             }
-            break;
-        case 'banner':
-            require_once('MVC/controllers/BannerController.php');
-            $controller_obj = new BannerController();
+    
+      
             switch ($act) {
                 case 'list':
                     $controller_obj->list();
@@ -98,9 +96,7 @@ if (isset($_SESSION['isLogin_Admin']) && $_SESSION['isLogin_Admin'] == true) {
             require_once('MVC/controllers/SanphamController.php');
             $controller_obj = new SanphamController();
             switch ($act) {
-                case 'list':
-                    $controller_obj->list();
-                    break;
+              
                 case 'add':
                     $controller_obj->add();
                     break;

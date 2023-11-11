@@ -48,26 +48,6 @@
     <i class="fas fa-fw fa-table"></i>
     <span>Xét duyệt hóa đơn</span></a>
 </li>
-
-<li class="nav-item">
-  <a class="nav-link" href="?mod=danhmuc">
-    <i class="fas fa-fw fa-table"></i>
-    <span>Quản lý danh mục sản phẩm</span></a>
-</li>
-<?php if (isset($_SESSION['isLogin_Admin']) && $_SESSION['isLogin_Admin'] == true) { ?>
-<li class="nav-item">
-  <a class="nav-link" href="?mod=banner">
-    <i class="fas fa-fw fa-table"></i>
-    <span>Quản lý Banner</span></a>
-</li>
-<?php }?>
-
-
-<li class="nav-item">
-  <a class="nav-link" href="?mod=khuyenmai">
-    <i class="fas fa-fw fa-table"></i>
-    <span>Quản lý khuyến mãi</span></a>
-</li>
 <!-- Sidebar Toggler (Sidebar) -->
 <div class="text-center d-none d-md-inline">
   <button class="rounded-circle border-0" id="sidebarToggle"></button>

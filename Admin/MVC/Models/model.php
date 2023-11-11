@@ -48,7 +48,7 @@ class Model
         $v = trim($v, ",");
         $query = "INSERT INTO $this->table($f) VALUES ($v);";
 
-        $status = $this->conn->query($query);
+      
 
         if ($status == true) {
             setcookie('msg', 'Thêm mới thành công', time() + 2);

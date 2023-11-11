@@ -79,28 +79,7 @@
                         case 'edit':
                           require_once('MVC/views/khuyenmai/edit.php');
                           break;
-                        default:
-                          require_once('MVC/views/khuyenmai/list.php');
-                          break;
-                      }
-                      break;
-                    case 'banner':
-                      switch ($act) {
-                        case 'list':
-                          require_once('MVC/views/banner/list.php');
-                          break;
-                        case 'add':
-                          require_once('MVC/views/banner/add.php');
-                          break;
-                        case 'detail':
-                          require_once('MVC/views/banner/detail.php');
-                          break;
-                        case 'edit':
-                          require_once('MVC/views/banner/edit.php');
-                          break;
-                        default:
-                          require_once('MVC/views/banner/list.php');
-                          break;
+                        
                       }
                       break;
                     case 'nguoidung':
@@ -157,25 +136,7 @@
                           break;
                       }
                       break;
-                    case 'danhmuc':
-                      switch ($act) {
-                        case 'list':
-                          require_once('MVC/views/danhmuc/list.php');
-                          break;
-                        case 'add':
-                          require_once('MVC/views/danhmuc/add.php');
-                          break;
-                        case 'detail':
-                          require_once('MVC/views/danhmuc/detail.php');
-                          break;
-                        case 'edit':
-                          require_once('MVC/views/danhmuc/edit.php');
-                          break;
-                        default:
-                          require_once('MVC/views/danhmuc/list.php');
-                          break;
-                      }
-                      break;
+                  
                     case 'login':
                       switch ($act) {
                         case 'admin':

@@ -1,7 +1,5 @@
 <!-- banner-start -->
-<?php
-require_once("banner.php")
-?>
+
 <!-- banner-end -->
 <!-- tab-products section start -->
 <div class="tab-products single-products section-padding extra-padding-top">

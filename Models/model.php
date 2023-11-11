@@ -49,14 +49,7 @@ class model
         
         return $data;
     }
-    function banner($a,$b)
-    {
-        $query =  "SELECT * from Banner  limit $a,$b";
-
-        require("result.php");
-        
-        return $data;
-    }
+    
     function sanpham_danhmuc($a, $b, $danhmuc)
     {
         $query =   "SELECT * from sanpham WHERE TrangThai = 1  and MaDM = $danhmuc ORDER BY ThoiGian DESC limit $a,$b";
