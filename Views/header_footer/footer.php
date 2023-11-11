@@ -13,19 +13,15 @@
                                 <ul>
                                     <li>
                                         <i class="mdi mdi-map-marker"></i>
-                                        <p>48 Cao Thắng,</p>
-                                        <p>Trường đại học sư phạm kỹ thuật</p>
+                                        <p>3/2, phường Xuân Khánh, quận Ninh Kiều, TP Cần Thơ</p>
                                     </li>
                                     <li>
                                         <i class="mdi mdi-phone"></i>
-                                        <p>(+84) 383425354</p>
-                                        <p>(+84) 702076081</p>
+                                        <p>(+84) 3823576545</p>
                                     </li>
                                     <li>
                                         <i class="mdi mdi-email"></i>
-                                        <p>ute0700@gmail.com</p>
-                                        <p>ute@ute.udn.vn</p>
-                                    </li>
+                                        <p>BookStore@gmail.com</p>
                                 </ul>
                             </div>
                         </div>
@@ -48,13 +44,14 @@
                     <div class="col-xs-6 col-sm-3 col-md-3 wide-mobile">
                         <div class="single-text">
                             <div class="footer-title">
-                                <h4>Danh mục</h4>
+                                <h4>Hỗ trợ</h4>
                             </div>
                             <div class="footer-menu">
                                 <ul>
-                                    <?php foreach ($data_danhmuc as $row) { ?>
-                                    <li><a href="?act=shop&sp=<?=$row['MaDM']?>"><i class="mdi mdi-menu-right"></i><?=$row['TenDM']?></a></li>
-                                    <?php  } ?>
+                                    <li></i>Chính sách đổi-trả-hoàn tiền</a></li>
+                                    <li></i>Chính sách bảo hành - bồi hoàn</a></li>
+                                    <li></i>Chính sách vận chuyển</a></li>
+                                    <li></i>Chính sách khách sỉ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -83,7 +80,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                    <p>&copy; DTPPhone 2020. All Rights Reserved.</p>
+                    <p>&copy; BookStore. All Rights Reserved.</p>
                 </div>
                 <div class="col-xs-12 col-sm-6 text-right">
                     <a href="https://www.nganluong.vn/vn/home.html" target="_blank"><img src="public/img/footer/payment.png" alt="" /></a>
