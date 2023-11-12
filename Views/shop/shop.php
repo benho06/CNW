@@ -7,7 +7,7 @@
 					<h2>Cửa hàng</h2>
 					<ul class="text-left">
 						<li><a href="?act=home">Trang chủ</a></li>
-						<li><span> / </span>Cửa hàng</li>
+						<li><span> // </span>Cửa hàng</li>
 					</ul>
 				</div>
 			</div>
@@ -19,8 +19,10 @@
 <section class="pages products-page section-padding-bottom">
 	<div class="container">
 		<div class="row">
-		
-		
+			<!-- Category-left -->
+			<div class="col-xs-12 col-sm-4 col-md-3">
+				<?php require_once("category.php") ?>
+			</div>
 			<div class="col-xs-12 col-sm-8 col-md-9">
 				<div class="right-products">
 					<div class="row">

@@ -8,8 +8,8 @@
                         <h2><?= $data['TenSP'] ?></h2>
                         <ul class="text-left">
                             <li><a href="?act=home">Trang chủ</a></li>
-                            <li><span> / </span><a href="?act=shop">Cửa Hàng</a></li>
-                            <li><span> / </span><?= $data['TenSP'] ?></li>
+                            <li><span> // </span><a href="?act=shop">Cửa Hàng</a></li>
+                            <li><span> // </span><?= $data['TenSP'] ?></li>
                         </ul>
                     </div>
                 </div>
@@ -47,8 +47,15 @@
                             </div>
                             <div class="quick-thumb">
                                 <ul class="product-slider">
-                                    
-                                   
+                                    <?php if ($data['HinhAnh2'] != null) { ?>
+                                        <li class="active"><a data-toggle="tab" href="#sin-1"> <img src="public/<?= $data['HinhAnh2'] ?>" alt="quick view" /> </a></li>
+                                    <?php } ?>
+                                    <?php if ($data['HinhAnh1'] != null) { ?>
+                                        <li><a data-toggle="tab" href="#sin-2"> <img src="public/<?= $data['HinhAnh1'] ?>" alt="small image" /> </a></li>
+                                    <?php } ?>
+                                    <?php if ($data['HinhAnh3'] != null) { ?>
+                                        <li><a data-toggle="tab" href="#sin-3"> <img src="public/<?= $data['HinhAnh3'] ?>" alt="small image" /> </a></li>
+                                    <?php } ?>
                                 </ul>
                             </div>
                         </div>
@@ -58,7 +65,7 @@
                             <div class="list-text">
                                 <h3><?= $data['TenSP'] ?></h3>
                                 <div class="ratting floatright">
-                                    
+                                    <p>( 27 Rating )</p>
                                     <i class="mdi mdi-star"></i>
                                     <i class="mdi mdi-star"></i>
                                     <i class="mdi mdi-star"></i>
@@ -72,7 +79,6 @@
                                 <div class="list-btn">
                                     <a href="?act=cart&xuli=add&id=<?=$data['MaSP']?>">Thêm vào giỏ</a>
                                     <?php if ($data['MaDM'] == 1) { ?>
-                                    <a href="#info">Chi tiết</a>
                                     <?php }?>
                                 </div>
                             </div>
@@ -84,27 +90,31 @@
             <!-- reviews area start -->
             <div class="row">
                 <div class="col-xs-12">
-                  
-                        <div class="tab-content">
-                            <?php if ($data['MaDM'] == 1) { ?>
-                                <div class="info-reviews moreinfo tab-pane fade in active" id="moreinfo">
-                                    
-                                </div>
-                            <?php } ?>
+                    <div class="reviews padding60 margin-top">
+                        <ul class="reviews-tab clearfix" id="info">
+                            
+                            <li><a data-toggle="tab" href="#reviews">Đánh giá</a></li>
+                        </ul>
+                        
+                           
                             <div class="<?php if ($data['MaDM'] == 1) {
                                             echo 'info-reviews review-text tab-pane fade in';
                                         } else {
                                             echo 'info-reviews moreinfo tab-pane fade in active';
                                         } ?>" id="reviews">
                                 <div class="about-author">
-                                    
+                                    <!-- comments -->
+                                    <div class="post-comments">
+                                        <!-- comment -->
+                                        <div class="fb-comments" data-href="https://dxdbloger.000webhostapp.com?act=detail&id=<?= $data['MaSP'] ?>" data-numposts="5" data-width=""></div>
+                                        <!-- /comment -->
+                                    </div>
+                                    <!-- /comments -->
                                 </div>
                                 <hr />
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                                                    
+                                </div>
+                    
             </div>
             <!-- reviews area end -->
         </div>

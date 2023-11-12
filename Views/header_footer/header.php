@@ -56,7 +56,6 @@
                                     <a href="?act=checkout">Thanh Toán</a>
                                 </li>
                                 <li><a href="?act=about">Giới thiệu</a></li>
-                              
                             </ul>
                         </nav>
                     </div>

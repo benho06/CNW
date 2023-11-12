@@ -27,7 +27,9 @@ switch ($act) {
     case "about":
         require_once("introduce/about.php");
         break;
-  
+    case "contact":
+        require_once("introduce/contact.php");
+        break;
     case "cart":
         require_once("cart/cart.php");
         break;

@@ -7,7 +7,7 @@
 					<h2>Thanh Toán</h2>
 					<ul class="text-left">
 						<li><a href="index.php?act=home">Trang chủ</a></li>
-						<li><span> / </span>Thanh Toán</li>
+						<li><span> // </span>Thanh Toán</li>
 					</ul>
 				</div>
 			</div>

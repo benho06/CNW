@@ -25,6 +25,7 @@ class HomeController
         $data_arr = array($data_limit1,$data_limit2,$data_limit3,$data_limit4);
         $data_random = $this->home_model->random(2);
 
+        $data_banner = $this->home_model->banner(0,2);
 
         $data_sanpham1 = $this->home_model->sanpham_danhmuc(0,8,1);
         $data_sanpham2 = $this->home_model->sanpham_danhmuc(0,8,2);
