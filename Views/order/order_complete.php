@@ -83,7 +83,7 @@
 					</div>
 					<p><?=$_SESSION['login']['DiaChi']?></p>
 					<p>Phone: <?=$_SESSION['login']['SDT']?></p>
-					<p>Email: <?=$_SESSION['login']['SDT']?></p>
+					<p>Email: <?=$_SESSION['login']['Email']?></p>
 				</div>
 			</div>
 		</div>

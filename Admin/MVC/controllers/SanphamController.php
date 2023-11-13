@@ -41,19 +41,7 @@ class SanphamController
             $HinhAnh1 =  "img/products/" . basename($_FILES["HinhAnh1"]["name"]);
         }
 
-        $HinhAnh2 = "";
-        $target_file = $target_dir . basename($_FILES["HinhAnh2"]["name"]); // link sẽ upload file lên
-        $status_upload = move_uploaded_file($_FILES["HinhAnh2"]["tmp_name"], $target_file);
-        if ($status_upload) { // nếu upload file không có lỗi 
-            $HinhAnh2 =  "/img/products/" . basename($_FILES["HinhAnh2"]["name"]);
-        }
-
-        $HinhAnh3 = "";
-        $target_file = $target_dir . basename($_FILES["HinhAnh3"]["name"]); // link sẽ upload file lên
-        $status_upload = move_uploaded_file($_FILES["HinhAnh3"]["tmp_name"], $target_file);
-        if ($status_upload) { // nếu upload file không có lỗi 
-            $HinhAnh3 =  "/img/products/" . basename($_FILES["HinhAnh3"]["name"]);
-        }
+       
 
         $TrangThai = 0;
         if (isset($_POST['TrangThai'])) {
@@ -69,18 +57,9 @@ class SanphamController
             'DonGia' => $_POST['DonGia'],
             'SoLuong' => $_POST['SoLuong'],
             'HinhAnh1' => $HinhAnh1,
-            'HinhAnh2' => $HinhAnh2,
-            'HinhAnh3' => $HinhAnh3,
+            
             'MaKM' =>  $_POST['MaKM'],
-            'ManHinh' =>  $_POST['ManHinh'],
-            'HDH' => $_POST['HDH'],
-            'CamSau' =>  $_POST['CamSau'],
-            'CamTruoc' =>  $_POST['CamTruoc'],
-            'CPU' =>  $_POST['CPU'],
-            'Ram' =>  $_POST['Ram'],
-            'Rom' =>  $_POST['Rom'],
-            'SDCard' =>  $_POST['SDCard'],
-            'Pin' =>  $_POST['Pin'],
+            
             'SoSao' =>  0,
             'SoDanhGia' => 0,
             'TrangThai' => $TrangThai,
@@ -152,18 +131,6 @@ class SanphamController
             'DonGia' => $_POST['DonGia'],
             'SoLuong' => $_POST['SoLuong'],
             'HinhAnh1' => $HinhAnh1,
-            'HinhAnh2' => $HinhAnh2,
-            'HinhAnh3' => $HinhAnh3,
-            'MaKM' =>  $_POST['MaKM'],
-            'ManHinh' =>  $_POST['ManHinh'],
-            'HDH' => $_POST["HDH"],
-            'CamSau' =>  $_POST['CamSau'],
-            'CamTruoc' =>  $_POST['CamTruoc'],
-            'CPU' =>  $_POST['CPU'],
-            'Ram' =>  $_POST['Ram'],
-            'Rom' =>  $_POST['Rom'],
-            'SDCard' =>  $_POST['SDCard'],
-            'Pin' =>  $_POST['Pin'],
             'SoSao' =>  0,
             'SoDanhGia' => 0,
             'TrangThai' => $TrangThai,
@@ -178,12 +145,6 @@ class SanphamController
         }
         if ($HinhAnh1 == "") {
             unset($data['HinhAnh1']);
-        }
-        if ($HinhAnh2 == "") {
-            unset($data['HinhAnh2']);
-        }
-        if ($HinhAnh3 == "") {
-            unset($data['HinhAnh3']);
         }
         $this->sanpham_model->update($data);
     }

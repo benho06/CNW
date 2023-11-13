@@ -27,35 +27,23 @@
                             <div class="single-quick-image text-center">
                                 <div class="list-img">
                                     <div class="product-f tab-content">
-                                        <?php if ($data['HinhAnh2'] !=  null) { ?>
-                                            <div class="simpleLens-container tab-pane fade in" id="sin-1">
-                                                <a class="simpleLens-image" data-lens-image="public/<?= $data['HinhAnh2'] ?>" href="#"><img src="public/<?= $data['HinhAnh2'] ?>" alt="" class="simpleLens-big-image"></a>
-                                            </div>
-                                        <?php } ?>
+                                      
                                         <?php if ($data['HinhAnh1'] != null) { ?>
                                             <div class="simpleLens-container tab-pane active fade in" id="sin-2">
                                                 <a class="simpleLens-image" data-lens-image="public/<?= $data['HinhAnh1'] ?>" href="#"><img src="public/<?= $data['HinhAnh1'] ?>" alt="" class="simpleLens-big-image"></a>
                                             </div>
                                         <?php } ?>
-                                        <?php if ($data['HinhAnh3'] != null) { ?>
-                                            <div class="simpleLens-container tab-pane fade in" id="sin-3">
-                                                <a class="simpleLens-image" data-lens-image="public/<?= $data['HinhAnh3'] ?>" href="#"><img src="public/<?= $data['HinhAnh3'] ?>" alt="" class="simpleLens-big-image"></a>
-                                            </div>
-                                        <?php } ?>
+                                       
                                     </div>
                                 </div>
                             </div>
                             <div class="quick-thumb">
                                 <ul class="product-slider">
-                                    <?php if ($data['HinhAnh2'] != null) { ?>
-                                        <li class="active"><a data-toggle="tab" href="#sin-1"> <img src="public/<?= $data['HinhAnh2'] ?>" alt="quick view" /> </a></li>
-                                    <?php } ?>
+                                    
                                     <?php if ($data['HinhAnh1'] != null) { ?>
                                         <li><a data-toggle="tab" href="#sin-2"> <img src="public/<?= $data['HinhAnh1'] ?>" alt="small image" /> </a></li>
                                     <?php } ?>
-                                    <?php if ($data['HinhAnh3'] != null) { ?>
-                                        <li><a data-toggle="tab" href="#sin-3"> <img src="public/<?= $data['HinhAnh3'] ?>" alt="small image" /> </a></li>
-                                    <?php } ?>
+                                   
                                 </ul>
                             </div>
                         </div>
